@@ -71,7 +71,7 @@ h1 {
     border: black solid 2px;
     background-color: white;
     color: black;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     box-shadow: grey 2px 2px 5px;
 }
 

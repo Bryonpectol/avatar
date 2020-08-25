@@ -101,3 +101,11 @@ input {
     padding: 1vh;
     border-radius: 25px;
 }
+
+.container {
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}

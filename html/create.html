@@ -28,11 +28,13 @@
 
             <h1>Create Your Bender Below!</h1>
 
-            <form class="createform">
+            <form id="mainform" class="createform">
                 <label>First Name:</label>
                 <input id="firstname" type="text" name="firstname" placeholder="First name" required />
                 <label>Last Name:</label>
                 <input id="lastname" type="text" name="lastname" placeholder="Last name" required />
+                <label>Age:</label>
+                <input id="age" type="number" name="age" required />
                 <label>Birth Month:</label>
                 <select class="submit" name="months" id="month" required>
                     <option value="January">January</option>
@@ -51,6 +53,9 @@
                 <button class="submit" type="button" onclick="GetInput();">Submit!</button>         
 
                 </form>
+                <div id="aboutdiv">
+                <p id="aboutyou"></p>
+                </div>
 
             <script src="/js/create.js"></script>
 

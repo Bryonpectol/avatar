@@ -1,53 +1,107 @@
 
 function GetInput() {
-    // let container = document.createElement("div");
+    let container = document.getElementById("aboutdiv");
     let firstnameVal = document.getElementById("firstname").value;
     let lastnameVal = document.getElementById("lastname").value;
     let monthVal = document.getElementById("month").value;
+    let ageVal = document.getElementById("age").value;
 
-const earthhome = ["Ba Sing Se", "Omashu", "Kyoshi Island", "Chin Village", "Gaoling"]
+    let Choice = "the Avatar!"
+    let NoChoice = "not the Avatar."
+
+    let Form = document.getElementById("mainform");
+
+const earthhome = ["Ba Sing Se", "Omashu", "Kyoshi Island", "Chin Village", "Gaoling", "Plains Village"];
+const firehome = ["Ember Island", "Fire Fountain City", "The Fire Nation Capital", "Jang Hui", "Shu Jing"];
+const waterhome = ["The Foggy Swamp", "The Northern Water Tribe", "The Southern Water Tribe"];
+const airhome = ["The Northern Air Temple", "The Eastern Air Temple", "The Southern Air Temple", "The Western Air Temple"];
+
+const job = ["a soldier", "a fisherman", "a blacksmith", "a royal", "a peasant", "a tea maker", "an entertainer", "a general", "a merchant", "a pirate", "a miner"];
+
+let earthHOME = earthhome[Math.floor(Math.random() * earthhome.length)];
+let waterHOME = waterhome[Math.floor(Math.random() * waterhome.length)];
+let fireHOME = firehome[Math.floor(Math.random() * firehome.length)];
+let airHOME = airhome[Math.floor(Math.random() * airhome.length)];
+
+let JOB = job[Math.floor(Math.random() * job.length)];
+
+let avatarChoose = Math.floor(Math.random(1,7000000000));
     
 
     if (monthVal == "December") {
-        bendertype = "Water";
+        bendertype = "a Water";
+        home = waterHOME;
+        document.body.style.backgroundColor = "blue";
     }
    if (monthVal == "January") {
-       bendertype = "Water";
+       bendertype = "a Water";
+       home = waterHOME;
+       document.body.style.backgroundColor = "blue";
    }
    if (monthVal == "Feburary") {
-    bendertype = "Water";
+    bendertype = "a Water";
+    home = waterHOME;
+    document.body.style.backgroundColor = "blue";
 }
 if (monthVal == "March") {
-    bendertype = "Earth";
+    bendertype = "an Earth";
+    home = earthHOME;
+    document.body.style.backgroundColor = "green";
 }
 if (monthVal == "April") {
-    bendertype = "Earth";
+    bendertype = "an Earth";
+    home = earthHOME;
+    document.body.style.backgroundColor = "green";
 }
 if (monthVal == "May") {
-    bendertype = "Earth";
-    
+    bendertype = "an Earth";
+    home = earthHOME;
+    document.body.style.backgroundColor = "green";
 }
 if (monthVal == "June") {
-    bendertype = "Fire";
+    bendertype = "a Fire";
+    home = fireHOME;
+    document.body.style.backgroundColor = "red";
 }
 if (monthVal == "July") {
-    bendertype = "Fire";
+    bendertype = "a Fire";
+    home = fireHOME;
+    document.body.style.backgroundColor = "red";
 }
 if (monthVal == "August") {
-    bendertype = "Fire";
+    bendertype = "a Fire";
+    home = fireHOME;
+    document.body.style.backgroundColor = "red";
 }
 if (monthVal == "September") {
-    bendertype = "Air";
+    bendertype = "an Air";
+    home = airHOME;
+    document.body.style.backgroundColor = "lightgrey";
 }
 if (monthVal == "October") {
-    bendertype = "Air";
+    bendertype = "an Air";
+    home = airHOME;
+    document.body.style.backgroundColor = "lightgrey";
 }
 if (monthVal == "November") {
-    bendertype = "Air";
+    bendertype = "an Air";
+    home = airHOME;
+    document.body.style.backgroundColor = "lightgrey";
 }
-    
 
-    document.write("Hello, " + firstnameVal + " " + lastnameVal + ". You are a(n) " + bendertype + " bender who lives in " );
+if(avatarChoose == 42) {
+    avatarChoice = Choice;
+}
+else {
+    avatarChoice = NoChoice;
+}
+
+
+    
+    Form.style.display = "none";
+
+    container = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who lives in " + home + ". You are " + ageVal + " years old. You are " + avatarChoice + " You are also " + JOB + ".";
+    container.ClassName = "container";
     
     // alert("Your name is: " + firstnameVal + " " + lastnameVal + ", and your birthday is: " + monthVal + " " + birthdayVal + ".");
     // console.log(firstnameVal + " " + lastnameVal + " : " + birthdayVal + " " + monthVal);

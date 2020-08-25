@@ -29,16 +29,19 @@ li {
     color: black;
     background-color: white;
     text-decoration: none;
+    box-shadow: grey 0px 5px 5px
 }
 
 .navlink:hover {
     background-color: grey;
     color: black;
+    box-shadow: grey 0px 5px 5px;
 }
 
 .navlinkon:hover {
     background-color: grey;
     color: black;
+    box-shadow: none;
 }
 
 .maindiv {
@@ -47,13 +50,54 @@ li {
 
 h1 {
     margin: 2vh;
-    /* text-align: center; */
-}
+    margin-bottom: 10vh;
+    }
 
 .button {
     padding: 5vh;
     text-align: center;
     margin: 2vh;
-    cursor: pointer;
-    /* margin-left: 43%; */
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    box-shadow: grey 5px 5px 5px;
+}
+
+.button:hover {
+    border: black solid 2px;
+    background-color: white;
+    color: black;
+    box-shadow: grey 2px 2px 5px;
+}
+
+.button:active {
+    border: black solid 2px;
+    background-color: white;
+    color: black;
+    box-shadow: none;
+}
+
+.createform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    width: 40vh;
+    margin: 1vh;
+    margin-left: 40%;
+    padding: 1vh;
+    padding-left: 2vh;
+    border-radius: 25px;
+    /* text-align: center; */
+}
+
+.submit {
+    width: 40vh;
+    margin: 1vh;
+    margin-top: 2.5vh;
+    margin-left: 40.5%;
+    padding: 1vh;
+    border-radius: 25px;
 }

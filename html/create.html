@@ -24,12 +24,45 @@
 
         <main>
 
+            <div class="maindiv">
+
+            <h1>Create Your Bender Below!</h1>
+
+            <form class="createform">
+                <label>First Name:</label>
+                <input id="firstname" type="text" name="firstname" placeholder="First name" required />
+                <label>Last Name:</label>
+                <input id="lastname" type="text" name="lastname" placeholder="Last name" required />
+                <label>Birthday (Month & Day):</label>
+
+                <input type="number" max="3" min="1" id="day" required />
+                <select class="submit" name="months" id="month" required>
+                    <option value="January">January</option>
+                    <option value="Feburary">Feburary</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <button class="submit" type="button" onclick="GetInput();">Submit!</button>         
+
+                </form>
+
+            <script src="/js/create.js"></script>
+
+            </div>
+
         </main>
 
         <footer>
 
         </footer>
         
-        <script src="" async defer></script>
     </body>
 </html>

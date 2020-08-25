@@ -1,9 +1,12 @@
 
 function GetInput() {
-    let container = document.createElement("div");
+    // let container = document.createElement("div");
     let firstnameVal = document.getElementById("firstname").value;
     let lastnameVal = document.getElementById("lastname").value;
     let monthVal = document.getElementById("month").value;
+
+const earthhome = ["Ba Sing Se", "Omashu", "Kyoshi Island", "Chin Village", "Gaoling"]
+    
 
     if (monthVal == "December") {
         bendertype = "Water";
@@ -16,14 +19,13 @@ function GetInput() {
 }
 if (monthVal == "March") {
     bendertype = "Earth";
-    home = "Ba Sing Se";
 }
 if (monthVal == "April") {
     bendertype = "Earth";
-    home = "Omashu"
 }
 if (monthVal == "May") {
     bendertype = "Earth";
+    
 }
 if (monthVal == "June") {
     bendertype = "Fire";
@@ -45,9 +47,8 @@ if (monthVal == "November") {
 }
     
 
-    document.write("Hello, " + firstnameVal + " " + lastnameVal + ". You are a(n) " + bendertype + " bender who lives in " +  +);
+    document.write("Hello, " + firstnameVal + " " + lastnameVal + ". You are a(n) " + bendertype + " bender who lives in " );
     
     // alert("Your name is: " + firstnameVal + " " + lastnameVal + ", and your birthday is: " + monthVal + " " + birthdayVal + ".");
-
-    console.log(firstnameVal + " " + lastnameVal + " : " + birthdayVal + " " + monthVal);
+    // console.log(firstnameVal + " " + lastnameVal + " : " + birthdayVal + " " + monthVal);
 }

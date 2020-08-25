@@ -16,7 +16,7 @@ const firehome = ["Ember Island", "Fire Fountain City", "The Fire Nation Capital
 const waterhome = ["The Foggy Swamp", "The Northern Water Tribe", "The Southern Water Tribe"];
 const airhome = ["The Northern Air Temple", "The Eastern Air Temple", "The Southern Air Temple", "The Western Air Temple"];
 
-const job = ["a soldier", "a fisherman", "a blacksmith", "a royal", "a peasant", "a tea maker", "an entertainer", "a general", "a merchant", "a pirate", "a miner"];
+const job = ["a soldier for the military", "a fisherman", "a blacksmith", "a royal", "a peasant", "a tea maker", "an entertainer", "a general for the military", "a merchant", "a pirate", "a miner"];
 
 let earthHOME = earthhome[Math.floor(Math.random() * earthhome.length)];
 let waterHOME = waterhome[Math.floor(Math.random() * waterhome.length)];

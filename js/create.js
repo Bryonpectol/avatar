@@ -1,10 +1,14 @@
 
+    let avatarLink = document.getElementById("avatarlink");
+    avatarLink.style.display = "none";
+
 function GetInput() {
     let container = document.getElementById("aboutdiv");
     let firstnameVal = document.getElementById("firstname").value;
     let lastnameVal = document.getElementById("lastname").value;
     let monthVal = document.getElementById("month").value;
-    let ageVal = document.getElementById("age").value;
+    let ageVal = document.getElementById("age").value;    
+
 
     let Choice = "the Avatar!"
     let NoChoice = "not the Avatar."
@@ -27,7 +31,7 @@ let airHOME = airhome[Math.floor(Math.random() * airhome.length)];
 
 let JOB = job[Math.floor(Math.random() * job.length)];
 
-let avatarChoose = Math.floor(Math.random(1,7000000000));
+let avatarChoose = Math.floor(Math.random() * 7000000001 - 1);
 
 
 
@@ -119,6 +123,7 @@ if (monthVal == "November") {
 
 if(avatarChoose == 42) {
     avatarChoice = Choice;
+    avatarLink.style.display = "visible";
 }
 else {
     avatarChoice = NoChoice;
@@ -128,10 +133,10 @@ else {
     
     Form.style.display = "none";
 
-    container = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who lives in " + home + ". You are " + ageVal + " years old. There is a 1 in 7 billion chance that you will be the next Avatar and, you are  " + avatarChoice + " You are also " + JOB + " who lived in the " + YourEra + "." ;
+    container = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who lives in " + home + ". You are " + ageVal + " years old. There is a 1 in 7 billion chance that you will be the next Avatar and, you are  " + avatarChoice + " You are also " + JOB + "." ;
     
     // alert("Your name is: " + firstnameVal + " " + lastnameVal + ", and your birthday is: " + monthVal + " " + birthdayVal + ".");
-    // console.log(firstnameVal + " " + lastnameVal + " : " + birthdayVal + " " + monthVal);
+    console.log(avatarChoose + " : " + avatarChoice);
 }
 
 container.ClassName = "container";

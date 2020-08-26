@@ -2,16 +2,30 @@
     let avatarLink = document.getElementById("avatarlink");
     avatarLink.style.display = "none";
 
+    let earthLink = document.getElementById("earthlink");
+    earthLink.style.display = "none";
+
+    let fireLink = document.getElementById("firelink");
+    fireLink.style.display = "none";
+
+    let waterLink = document.getElementById("waterlink");
+    waterLink.style.display = "none";
+
+    let airLink = document.getElementById("airlink");
+    airLink.style.display = "none";
+
 function GetInput() {
     let container = document.getElementById("aboutdiv");
     let firstnameVal = document.getElementById("firstname").value;
     let lastnameVal = document.getElementById("lastname").value;
     let monthVal = document.getElementById("month").value;
-    let ageVal = document.getElementById("age").value;    
+    let ageVal = document.getElementById("age").value;  
 
 
     let Choice = "the Avatar!"
     let NoChoice = "not the Avatar."
+    let Close = "super close to becoming the avatar!"
+
 
     let Form = document.getElementById("mainform");
 
@@ -64,69 +78,89 @@ let avatarChoose = Math.floor(Math.random() * 7000000001 - 1);
         bendertype = "a Water";
         home = waterHOME;
         document.body.style.backgroundColor = "blue";
+        waterLink.style.display = "block";
     }
    if (monthVal == "January") {
        bendertype = "a Water";
        home = waterHOME;
        document.body.style.backgroundColor = "blue";
+       waterLink.style.display = "block";
    }
    if (monthVal == "Feburary") {
     bendertype = "a Water";
     home = waterHOME;
     document.body.style.backgroundColor = "blue";
+    waterLink.style.display = "block";
 }
 if (monthVal == "March") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundColor = "green";
+    earthLink.style.display = "block";
 }
 if (monthVal == "April") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundColor = "green";
+    earthLink.style.display = "block";
 }
 if (monthVal == "May") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundColor = "green";
+    earthLink.style.display = "block";
 }
 if (monthVal == "June") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundColor = "red";
+    fireLink.style.display = "block";
 }
 if (monthVal == "July") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundColor = "red";
+    fireLink.style.display = "block";
 }
 if (monthVal == "August") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundColor = "red";
+    fireLink.style.display = "block";
 }
 if (monthVal == "September") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundColor = "lightgrey";
+    airLink.style.display = "block";
 }
 if (monthVal == "October") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundColor = "lightgrey";
+    airLink.style.display = "block";
 }
 if (monthVal == "November") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundColor = "lightgrey";
+    airLink.style.display = "block";
 }
 
 if(avatarChoose == 42) {
     avatarChoice = Choice;
-    avatarLink.style.display = "visible";
+    avatarLink.style.display = "block";
 }
 else {
     avatarChoice = NoChoice;
+}
+
+if (avatarChoose < 42) {
+    avatarChoice = Close;
+}
+
+if (avatarChoose > 42 && avatarChoose <= 100) {
+    avatarChoice = Close;
 }
 
 

@@ -18,6 +18,8 @@ const airhome = ["The Northern Air Temple", "The Eastern Air Temple", "The South
 
 const job = ["a soldier for the military", "a fisherman", "a blacksmith", "a royal", "a peasant", "a tea maker", "an entertainer", "a general for the military", "a merchant", "a pirate", "a miner"];
 
+const era = ["Era of Raava", "First Age of the Avatar", "Second Age of the Avatar", "Harmonic Convergence", "Hundred Year War", "Anti-bending Revolution"]
+
 let earthHOME = earthhome[Math.floor(Math.random() * earthhome.length)];
 let waterHOME = waterhome[Math.floor(Math.random() * waterhome.length)];
 let fireHOME = firehome[Math.floor(Math.random() * firehome.length)];
@@ -26,6 +28,32 @@ let airHOME = airhome[Math.floor(Math.random() * airhome.length)];
 let JOB = job[Math.floor(Math.random() * job.length)];
 
 let avatarChoose = Math.floor(Math.random(1,7000000000));
+
+
+
+    if(ageVal >= 80) {
+        YourEra = era[0];
+    }
+
+    if (ageVal <= 15) {
+        YourEra = era[5]
+    }
+
+    if (ageVal > 15 && ageVal <= 25) {
+        YourEra = era[4]
+    }
+
+    if (ageVal > 25 && ageVal <= 45) {
+        YourEra = era[3]
+    }
+
+    if (ageVal > 45 && ageVal <= 60) {
+        YourEra = era[2]
+    }
+
+    if (ageVal > 60 && ageVal <= 79) {
+        YourEra = era[1]
+    }
     
 
     if (monthVal == "December") {
@@ -100,9 +128,10 @@ else {
     
     Form.style.display = "none";
 
-    container = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who lives in " + home + ". You are " + ageVal + " years old. You are " + avatarChoice + " You are also " + JOB + ".";
-    container.ClassName = "container";
+    container = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who lives in " + home + ". You are " + ageVal + " years old. There is a 1 in 7 billion chance that you will be the next Avatar and, you are  " + avatarChoice + " You are also " + JOB + " who lived in the " + YourEra + "." ;
     
     // alert("Your name is: " + firstnameVal + " " + lastnameVal + ", and your birthday is: " + monthVal + " " + birthdayVal + ".");
     // console.log(firstnameVal + " " + lastnameVal + " : " + birthdayVal + " " + monthVal);
 }
+
+container.ClassName = "container";

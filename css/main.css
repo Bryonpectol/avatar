@@ -113,6 +113,8 @@ input {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
+    height: 64vh;
+    padding: 3vh;
 }
 }
 

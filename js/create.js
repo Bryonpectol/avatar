@@ -14,6 +14,11 @@
     let airLink = document.getElementById("airlink");
     airLink.style.display = "none";
 
+    let waterHome = "/html/water.html";
+    let earthHome = "/html/earth.html";
+    let fireHome = "/html/fire.html";
+    let airHome = "/html/air.html";
+
     // let NextBtn1 = document.getElementById("btn1");
     // NextBtn1.style.display = "none";
 
@@ -91,72 +96,84 @@ let avatarChoose = Math.floor(Math.random() * 7000000001 - 1);
         document.body.style.backgroundImage = "url('/images/bgs/water.jpg')";
         document.body.style.backgroundSize = "cover";
         waterLink.style.display = "block";
+        let homeLink = localStorage.setItem("homelink", waterHome);
     }
    if (monthVal == "January") {
        bendertype = "a Water";
        home = waterHOME;
        document.body.style.backgroundImage = "url('/images/bgs/water.jpg')";
        waterLink.style.display = "block";
+       let homeLink = localStorage.setItem("homelink", waterHome);
    }
    if (monthVal == "Feburary") {
     bendertype = "a Water";
     home = waterHOME;
     document.body.style.backgroundImage = "url('/images/bgs/water.jpg')";
     waterLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", waterHome);
 }
 if (monthVal == "March") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundImage = "url('/images/bgs/earth.jpg')";
     earthLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", earthHome);
 }
 if (monthVal == "April") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundImage = "url('/images/bgs/earth.jpg')";
     earthLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", earthHome);
 }
 if (monthVal == "May") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundImage = "url('/images/bgs/earth.jpg')";
     earthLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", earthHome);
 }
 if (monthVal == "June") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundImage = "url('/images/bgs/fire.png')";
     fireLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", fireHome);
 }
 if (monthVal == "July") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundImage = "url('/images/bgs/fire.png')";
     fireLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", fireHome);
 }
 if (monthVal == "August") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundImage = "url('/images/bgs/fire.png')";
     fireLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", fireHome);
 }
 if (monthVal == "September") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundImage = "url('/images/bgs/air.jpg')";
     airLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", airHome);
 }
 if (monthVal == "October") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundImage = "url('/images/bgs/air.jpg')";
     airLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", airHome);
 }
 if (monthVal == "November") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundImage = "url('/images/bgs/air.jpg')";
     airLink.style.display = "block";
+    let homeLink = localStorage.setItem("homelink", airHome);
 }
 
 if(avatarChoose == 42) {

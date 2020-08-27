@@ -14,8 +14,19 @@
     let airLink = document.getElementById("airlink");
     airLink.style.display = "none";
 
+    // let NextBtn1 = document.getElementById("btn1");
+    // NextBtn1.style.display = "none";
+
+    // let container2 = document.getElementById("secondaboutdiv");
+    // container2.style.display = "none";
+
+    let container1 = document.getElementById("aboutdiv");
+    container1.style.display = "none";
+
+
 function GetInput() {
-    let container = document.getElementById("aboutdiv");
+    container1.style.display = "block";
+
     let firstnameVal = document.getElementById("firstname").value;
     let lastnameVal = document.getElementById("lastname").value;
     let monthVal = document.getElementById("month").value;
@@ -168,10 +179,33 @@ if (avatarChoose > 42 && avatarChoose <= 100) {
     
     Form.style.display = "none";
 
-    container = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who lives in " + home + ". You are " + ageVal + " years old. There is a 1 in 7 billion chance that you will be the next Avatar and, you are  " + avatarChoice + " You are also " + JOB + "." ;
+    localStorage.setItem("firstname", firstnameVal);
+    localStorage.setItem("lastname", lastnameVal);
+    localStorage.setItem("month", monthVal);
+    localStorage.setItem("ageval", ageVal);
+
+    localStorage.setItem("bendertype", home);
+
+
     
+
+    container1 = document.getElementById("aboutyou").innerHTML = "Hello, " + firstnameVal + " " + lastnameVal + ". You are " + bendertype + " bender who was born in " + home + ". You are " + ageVal + " years old. There is a 1 in 7 billion chance that you will be the next Avatar and, you are  " + avatarChoice + " You are also " + JOB + "." ;
+
+    // NextBtn1.style.display = "block";
+
     // alert("Your name is: " + firstnameVal + " " + lastnameVal + ", and your birthday is: " + monthVal + " " + birthdayVal + ".");
     console.log(avatarChoose + " : " + avatarChoice);
 }
 
-container.ClassName = "container";
+function secondInput() {
+
+    let firstnameVal = document.getElementById("firstname").value;
+    let lastnameVal = document.getElementById("lastname").value;
+    let monthVal = document.getElementById("month").value;
+    let ageVal = document.getElementById("age").value;  
+
+    container2.style.display = "block";
+
+
+    container2 = document.getElementById("secondabout").innerHTML = "" + firstnameVal;
+}

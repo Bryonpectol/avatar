@@ -17,6 +17,19 @@
 
 @media only screen and (min-width: 601px) {
 
+.mainlogo {
+    width: 30vh;
+    /* height: 5rem; */
+    background-color: white;
+}
+
+.mainlogomain {
+    width: 30vh;
+    /* height: 5rem; */
+    background-color: white;
+    margin-top: 20vh;
+}
+
 .createbody {
     background-color: black;
 }
@@ -35,7 +48,7 @@ ul {
 li {
     margin: 5vh;
     list-style-type: none;
-
+    font-family: 'express', helvetica;
 }
 
 .navlink {
@@ -68,11 +81,16 @@ li {
 
 h1 {
     margin: 2vh;
-    margin-bottom: 10vh;
+    /* margin-bottom: 10vh; */
     background-color: white;
-    padding: 2vh;
+    /* padding-top: 2vh; */
     font-family: 'go3v2', Helvetica;
     }
+
+.h1chinese {
+    margin-top: 0px;
+    margin-bottom: 10vh;
+}
 
 .button {
     padding: 5vh;
@@ -82,6 +100,7 @@ h1 {
     background-color: black;
     color: white;
     box-shadow: grey 5px 5px 5px;
+    font-family: 'express', helvetica;
 }
 
 .button:hover {
@@ -121,12 +140,17 @@ label {
 }
 
 .submit {
+    text-align: center;
     width: 40vh;
     margin: 1vh;
     margin-top: 2.5vh;
     margin-left: 40.5%;
+    padding-left: 2vh;
+    padding-right: 2vh;
     padding: 1vh;
     border-radius: 25px;
+    font-family: 'express', helvetica;
+    border: 2px black solid;
 }
 
 .container {
@@ -138,6 +162,14 @@ label {
     height: 64vh;
     padding: 3vh;
 }
+
+.elementlink {
+    text-decoration: none;
+    color: black;
+    border: black solid 2px;
+    padding: 5vh 0vh 5vh 0vh;
+    margin: 2% 20% 0% 20%;
+}
 }
 
 
@@ -145,6 +177,19 @@ label {
 
 
 @media only screen and (max-width: 600px) {
+
+    .mainlogo {
+        width: 30vh;
+        /* height: 5rem; */
+        background-color: white;
+    }
+
+    .mainlogomain {
+        width: 30vh;
+        /* height: 5rem; */
+        background-color: white;
+        margin-top: 2vh;
+    }
     
     .createbody {
         background-color: black;
@@ -165,7 +210,7 @@ label {
     li {
         margin: 5vh;
         list-style-type: none;
-    
+        font-family: 'express', helvetica;
     }
     
     .navlink {
@@ -198,9 +243,15 @@ label {
     
     h1 {
         margin: 2vh;
-        margin-bottom: 5vh;
+        /* margin-bottom: 5vh; */
         background-color: white;
         padding: 2vh;
+        font-family: 'go3v2', helvetica;
+        }
+
+    .h1chinese {
+        margin-top: 0px;
+        margin-bottom: 6vh;
         }
     
     .button {
@@ -211,6 +262,7 @@ label {
         background-color: black;
         color: white;
         box-shadow: grey 5px 5px 5px;
+        font-family: 'express', helvetica;
     }
     
     .button:hover {
@@ -255,6 +307,8 @@ label {
         /* margin-left: 40.5%; */
         padding: 2vh;
         border-radius: 25px;
+        font-family: 'express', helvetica;
+        border: 2px black solid;
     }
     
     .container {

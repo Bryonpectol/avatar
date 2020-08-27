@@ -14,6 +14,7 @@
     <body>
        
         <nav>
+            <img class="mainlogo" src="" alt="My Avatar Bender Logo" />
             <ul>
                 <a class="navlink" href="/index.html"><li>Home</li></a>
                 <a class="navlinkon" href="/html/create.html"><li>Create!</li></a>
@@ -27,15 +28,20 @@
             <div class="maindiv">
 
             <h1>Create Your Bender Below!</h1>
+            <h1 class="h1chinese">在下面创建您的人</h1>
 
             <form id="mainform" class="createform">
                 <label>First Name:</label>
+                <label>名字</label>
                 <input id="firstname" type="text" name="firstname" placeholder="First name" required />
                 <label>Last Name:</label>
+                <label>姓</label>
                 <input id="lastname" type="text" name="lastname" placeholder="Last name" required />
                 <label>Age:</label>
+                <label>你的年龄</label>
                 <input id="age" type="number" name="age" required />
                 <label>Birth Month:</label>
+                <label>出生月</label>
                 <select class="submit" name="months" id="month" required>
                     <option value="January">January</option>
                     <option value="Feburary">Feburary</option>
@@ -55,13 +61,19 @@
                 </form>
                 <div class="container" id="aboutdiv">
                 <p id="aboutyou"></p>
-                <a id="avatarlink" href="/html/avatar.html">Avatar Link</a>
-                <a id="earthlink" href="/html/earth.html">Earth Link</a>
-                <a id="firelink" href="/html/fire.html">Fire Link</a>
-                <a id="waterlink" href="/html/water.html">Water Link</a>
-                <a id="airlink" href="/html/air.html">Air Link</a>
+                <a class="elementlink" id="avatarlink" href="/html/avatar.html">View The Avatar Page</a>
+                <a class="elementlink" id="earthlink" href="/html/earth.html">View The Earth Bending Page</a>
+                <a class="elementlink" id="firelink" href="/html/fire.html">View The Fire Bending Page</a>
+                <a class="elementlink" id="waterlink" href="/html/water.html">View The Water Bending Page</a>
+                <a class="elementlink" id="airlink" href="/html/air.html">View The Air Bending Page</a>
 
+                <!-- <button type="button" class="submit" id="btn1" onclick="secondInput();">Next</button> -->
+
+                <!-- <div id="secondaboutdiv">
+                <p id="secondabout"></p>
                 </div>
+
+                </div> -->
 
             <script src="/js/create.js"></script>
 

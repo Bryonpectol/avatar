@@ -67,8 +67,10 @@ ul {
 }
 
 #ABOUTyou {
-    text-align: center;
+    /* text-align: center; */
+    padding-left: 2vh;
     margin-top: 2vh;
+    padding-right: 2vh;
 }
 
 li {
@@ -200,9 +202,10 @@ label {
 }
 
 #aboutYOU {
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     justify-content: center;
+    /* padding-left: 2vh; */
 }
 
 .elementlink {
@@ -267,6 +270,8 @@ label {
     #ABOUTyou {
         text-align: center;
         margin-top: 2vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
     }
     
     ul {
@@ -370,6 +375,10 @@ label {
 
     label {
         font-family: 'express', helvetica;
+    }
+
+    #aboutYOU {
+        text-align: center;
     }
     
     .submit {

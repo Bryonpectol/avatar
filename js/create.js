@@ -16,6 +16,10 @@
 
     let homeImg = document.getElementById("homeimg");
 
+    let Email = document.getElementById("email").value;
+    let Emailstore = localStorage.setItem("email", Email);
+
+
     let waterHome = "/html/water.html";
     let earthHome = "/html/earth.html";
     let fireHome = "/html/fire.html";
@@ -38,6 +42,20 @@ function GetInput() {
     let lastnameVal = document.getElementById("lastname").value;
     let monthVal = document.getElementById("month").value;
     let ageVal = document.getElementById("age").value;  
+
+// email
+    
+
+
+   if(Email = Emailstore)
+        {   
+            alert("You Already have an email")
+        }
+        else {
+            Emailstore = localStorage.setItem("email", Email);
+        }
+
+
 
 
     let Choice = "the Avatar!"
@@ -194,7 +212,7 @@ if (monthVal == "November") {
 }
 
 // let HomeIMG = homeIMG[Math.floor(Math.random() * homeIMG.length)];
-
+let Job = localStorage.setItem("job", JOB);
 
 
 

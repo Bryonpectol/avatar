@@ -1,4 +1,6 @@
 
+    
+    
     let avatarLink = document.getElementById("avatarlink");
     avatarLink.style.display = "none";
 
@@ -37,6 +39,7 @@
 
 function GetInput() {
     container1.style.display = "block";
+
 
     let firstnameVal = document.getElementById("firstname").value;
     let lastnameVal = document.getElementById("lastname").value;

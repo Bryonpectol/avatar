@@ -23,6 +23,26 @@
     background-color: white;
 }
 
+.waterbg {
+    background-image: url("/images/bgs/water.jpg");
+    background-size: cover;
+}
+
+.earthbg {
+    background-image: url("/images/bgs/earth.jpg");
+    background-size: cover;
+}
+
+.firebg {
+    background-image: url("/images/bgs/fire.png");
+    background-size: cover;
+}
+
+.airbg {
+    background-image: url("/images/bgs/air.jpg");
+    background-size: cover;
+}
+
 .mainlogomain {
     width: 30vh;
     /* height: 5rem; */
@@ -38,11 +58,17 @@ nav {
     width: 100%;
     display: flex;
     background-color: black;
+    box-shadow: 2px 2px 5px grey;
 }
 
 ul {
     display: flex;
     flex-direction: row;
+}
+
+#ABOUTyou {
+    text-align: center;
+    margin-top: 2vh;
 }
 
 li {
@@ -64,8 +90,8 @@ li {
 }
 
 .navlink:hover {
-    background-color: grey;
-    color: black;
+    /* background-color: grey; */
+    /* color: black; */
     box-shadow: grey 0px 5px 5px;
 }
 
@@ -160,7 +186,23 @@ label {
     flex-wrap: wrap;
     background-color: white;
     height: 64vh;
-    padding: 3vh;
+    /* padding: 3vh; */
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 13.5vh;
+    flex-direction: column;
+    /* text-align: center; */
+}
+
+.homeimage {
+    
+}
+
+#aboutYOU {
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
 }
 
 .elementlink {
@@ -179,9 +221,10 @@ label {
 @media only screen and (max-width: 600px) {
 
     .mainlogo {
-        width: 30vh;
+        width: 10vh;
         /* height: 5rem; */
         background-color: white;
+        height: 10vh;
     }
 
     .mainlogomain {
@@ -199,6 +242,31 @@ label {
         width: 100%;
         display: flex;
         background-color: black;
+    }
+
+    .waterbg {
+        background-image: url("/images/bgs/water.jpg");
+        background-size: cover;
+    }
+    
+    .earthbg {
+        background-image: url("/images/bgs/earth.jpg");
+        background-size: cover;
+    }
+    
+    .firebg {
+        background-image: url("/images/bgs/fire.png");
+        background-size: cover;
+    }
+    
+    .airbg {
+        background-image: url("/images/bgs/air.jpg");
+        background-size: cover;
+    }
+
+    #ABOUTyou {
+        text-align: center;
+        margin-top: 2vh;
     }
     
     ul {

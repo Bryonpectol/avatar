@@ -14,6 +14,8 @@
     let airLink = document.getElementById("airlink");
     airLink.style.display = "none";
 
+    let homeImg = document.getElementById("homeimg");
+
     let waterHome = "/html/water.html";
     let earthHome = "/html/earth.html";
     let fireHome = "/html/fire.html";
@@ -54,16 +56,20 @@ const job = ["a soldier for the military", "a fisherman", "a blacksmith", "a roy
 
 const era = ["Era of Raava", "First Age of the Avatar", "Second Age of the Avatar", "Harmonic Convergence", "Hundred Year War", "Anti-bending Revolution"]
 
+const homeIMG = ["/images/nwt.png", "/images/swt.png", "/images/tfs.png"];
+
+
 let earthHOME = earthhome[Math.floor(Math.random() * earthhome.length)];
 let waterHOME = waterhome[Math.floor(Math.random() * waterhome.length)];
 let fireHOME = firehome[Math.floor(Math.random() * firehome.length)];
 let airHOME = airhome[Math.floor(Math.random() * airhome.length)];
 
+
 let JOB = job[Math.floor(Math.random() * job.length)];
 
 let avatarChoose = Math.floor(Math.random() * 7000000001 - 1);
 
-
+let avatarDes = localStorage.setItem("avatardes", avatarChoose);
 
     if(ageVal >= 80) {
         YourEra = era[0];
@@ -102,6 +108,7 @@ let avatarChoose = Math.floor(Math.random() * 7000000001 - 1);
        bendertype = "a Water";
        home = waterHOME;
        document.body.style.backgroundImage = "url('/images/bgs/water.jpg')";
+       document.body.style.backgroundSize = "cover";
        waterLink.style.display = "block";
        let homeLink = localStorage.setItem("homelink", waterHome);
    }
@@ -109,6 +116,7 @@ let avatarChoose = Math.floor(Math.random() * 7000000001 - 1);
     bendertype = "a Water";
     home = waterHOME;
     document.body.style.backgroundImage = "url('/images/bgs/water.jpg')";
+    document.body.style.backgroundSize = "cover";
     waterLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", waterHome);
 }
@@ -116,6 +124,7 @@ if (monthVal == "March") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundImage = "url('/images/bgs/earth.jpg')";
+    document.body.style.backgroundSize = "cover";
     earthLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", earthHome);
 }
@@ -123,6 +132,7 @@ if (monthVal == "April") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundImage = "url('/images/bgs/earth.jpg')";
+    document.body.style.backgroundSize = "cover";
     earthLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", earthHome);
 }
@@ -130,6 +140,7 @@ if (monthVal == "May") {
     bendertype = "an Earth";
     home = earthHOME;
     document.body.style.backgroundImage = "url('/images/bgs/earth.jpg')";
+    document.body.style.backgroundSize = "cover";
     earthLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", earthHome);
 }
@@ -137,6 +148,7 @@ if (monthVal == "June") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundImage = "url('/images/bgs/fire.png')";
+    document.body.style.backgroundSize = "cover";
     fireLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", fireHome);
 }
@@ -144,6 +156,7 @@ if (monthVal == "July") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundImage = "url('/images/bgs/fire.png')";
+    document.body.style.backgroundSize = "cover";
     fireLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", fireHome);
 }
@@ -151,6 +164,7 @@ if (monthVal == "August") {
     bendertype = "a Fire";
     home = fireHOME;
     document.body.style.backgroundImage = "url('/images/bgs/fire.png')";
+    document.body.style.backgroundSize = "cover";
     fireLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", fireHome);
 }
@@ -158,6 +172,7 @@ if (monthVal == "September") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundImage = "url('/images/bgs/air.jpg')";
+    document.body.style.backgroundSize = "cover";
     airLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", airHome);
 }
@@ -165,6 +180,7 @@ if (monthVal == "October") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundImage = "url('/images/bgs/air.jpg')";
+    document.body.style.backgroundSize = "cover";
     airLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", airHome);
 }
@@ -172,9 +188,15 @@ if (monthVal == "November") {
     bendertype = "an Air";
     home = airHOME;
     document.body.style.backgroundImage = "url('/images/bgs/air.jpg')";
+    document.body.style.backgroundSize = "cover";
     airLink.style.display = "block";
     let homeLink = localStorage.setItem("homelink", airHome);
 }
+
+// let HomeIMG = homeIMG[Math.floor(Math.random() * homeIMG.length)];
+
+
+
 
 if(avatarChoose == 42) {
     avatarChoice = Choice;
@@ -211,7 +233,7 @@ if (avatarChoose > 42 && avatarChoose <= 100) {
     // NextBtn1.style.display = "block";
 
     // alert("Your name is: " + firstnameVal + " " + lastnameVal + ", and your birthday is: " + monthVal + " " + birthdayVal + ".");
-    console.log(avatarChoose + " : " + avatarChoice);
+    console.log(avatarChoose + " : " + avatarChoice + " : " + waterHOME + " : " + homeImg);
 }
 
 function secondInput() {
@@ -225,4 +247,5 @@ function secondInput() {
 
 
     container2 = document.getElementById("secondabout").innerHTML = "" + firstnameVal;
+
 }
